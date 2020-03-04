@@ -24,19 +24,24 @@ Finally, these dense layers are finally inputted into a last dense layer to get 
 Loss/Accuracy and Learning Rate
 --------------------------------
 ### 0.001 Learning Rate
+
 ![alt-text-1](https://github.com/CrudeCoconut/cifar10_cnn/blob/master/Learning%20Rate/0.001_Loss.png "Loss 0.001") ![alt-text-2](https://github.com/CrudeCoconut/cifar10_cnn/blob/master/Learning%20Rate/0.001_Acc.png "Accuracy 0.001")
 
 
 ### 0.01 Learning Rate
+
 ![alt-text-1](https://github.com/CrudeCoconut/cifar10_cnn/blob/master/Learning%20Rate/0.01_loss.PNG "title-1") ![alt-text-2](https://github.com/CrudeCoconut/cifar10_cnn/blob/master/Learning%20Rate/0.01_Acc.png "title-2")
 
 
 ### 0.1 Learning Rate
-![alt-text-1](https://github.com/CrudeCoconut/cifar10_cnn/blob/master/Learning%20Rate/0.1_Loss.PNG "title-1") ![alt-text-2](https://github.com/CrudeCoconut/cifar10_cnn/blob/master/Learning%20Rate/0.1_Acc.png"title-2")
+
+![alt-text-1](https://github.com/CrudeCoconut/cifar10_cnn/blob/master/Learning%20Rate/0.1_Loss.PNG "title-1") ![alt-text-2](https://github.com/CrudeCoconut/cifar10_cnn/blob/master/Learning%20Rate/0.1_Acc.PNG "title-2")
 
 
 As the name implies, the bigger the learning rate, the faster the CNN "learns" or trains. I decided to target learning rate as 
-a metric because I wanted to test which learning rate would lead to
+a metric because I wanted to test which learning rate would overshoot the minima. 0.01 Learning Rate looks most optimal as the
+cross validation, which in the scenario is the test, loss and acurracy consistently and smoothly decrease. The small learning rate
+of 0.01 moves slowly and I think that it might be getting stuck in local minima, while the 0.1 learning rate 
 
 
 Future Work for This Dataset
