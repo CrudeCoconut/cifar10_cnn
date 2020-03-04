@@ -2,8 +2,8 @@
 
 Summary
 ------
-Built a CNN with the Keras Library on the Cifar10 dataset and recorded metrics with learning rate over 10 epochs and batch size of 32.
-
+CNN with the Keras Library on the Cifar10 dataset and recorded metrics with learning rate over 10 epochs and batch size of 32.
+The code is in the jupyter notebook in python above. Below is a summary of findings.
 
 Model/CNN Layers
 -----------------
@@ -23,6 +23,26 @@ Finally, these dense layers are finally inputted into a last dense layer to get 
 
 Loss/Accuracy and Learning Rate
 --------------------------------
-
+### 0.001 Learning Rate
 ![alt-text-1](https://github.com/CrudeCoconut/cifar10_cnn/blob/master/Learning%20Rate/0.001_Loss.png "Loss 0.001") ![alt-text-2](https://github.com/CrudeCoconut/cifar10_cnn/blob/master/Learning%20Rate/0.001_Acc.png "Accuracy 0.001")
 
+
+### 0.01 Learning Rate
+![alt-text-1](https://github.com/CrudeCoconut/cifar10_cnn/blob/master/Learning%20Rate/0.01_loss.PNG "title-1") ![alt-text-2](https://github.com/CrudeCoconut/cifar10_cnn/blob/master/Learning%20Rate/0.01_Acc.png "title-2")
+
+
+### 0.1 Learning Rate
+![alt-text-1](https://github.com/CrudeCoconut/cifar10_cnn/blob/master/Learning%20Rate/0.1_Loss.PNG "title-1") ![alt-text-2](https://github.com/CrudeCoconut/cifar10_cnn/blob/master/Learning%20Rate/0.1_Acc.png"title-2")
+
+
+As the name implies, the bigger the learning rate, the faster the CNN "learns" or trains. I decided to target learning rate as 
+a metric because I wanted to test which learning rate would lead to
+
+
+Future Work for This Dataset
+-----------------------------
+I ideally want to train a model to around 90 percent accuracy and lower loss. This might be able to be done with more epochs, but
+I also want to find the optimal paramters for this model. I changed the learning rate manually, but I want to be 
+automate changes in different parameters like learning rate, dropout rate, dense layer units, etc, without changing
+the actual structure of the CNN and check for overfitting/underfitting to determine paramters automatically instead of 
+manually.
